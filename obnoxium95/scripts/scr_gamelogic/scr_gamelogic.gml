@@ -68,6 +68,13 @@ function slotWins(s1,s2,s3){
     // Gift win
     if (s1 == 0) && (s2 == 0) && (s3 == 0){
         // Give equipment
+        var newEquipment = createEquip()
+        
+        // check equip array length
+        array_insert(C_gameroomMgr.equipmentArray,0,newEquipment)
+        if (array_length(C_gameroomMgr.equipmentArray) > 3){
+            array_pop(C_gameroomMgr.equipmentArray)
+        } 
         
     }
     
@@ -80,6 +87,10 @@ function slotWins(s1,s2,s3){
     // Enemy win
     if (s1 == 4) && (s2 == 4) && (s3 == 4){
         // Give enemies
+        
+        with (ob_tuntunSpawner){
+            event_user(0)
+        }
         
         // add to difficulty mod
         prize2 = 0.3 + global.dungeonMod
@@ -126,4 +137,42 @@ function format_scientific(_number, _decimal_places = 2) {
     return string_format(mantissa, 1, _decimal_places) + "e" + 
            (exponent >= 0 ? "+" : "") + string(exponent);
     }
+}
+
+
+function createEquip(){
+    
+    var prefix = choose("Crap", "Lame", "Tepid", "Cool", "Stunning","Unholy", "Smelly", "Swift", "Rancid")
+    
+    var itemName = string(prefix) + " " + string(choose("Weasel Slammer", "Knuckle Licker", "Tommyknocker", "Pint Glass", "Smashed Avocado", "Loaded Dice", "Can Opener", "Fishfingers", "Mouse Trap", "Youtube Sponsorship", "Streamer Bait"))
+    
+    var attackPwr = 1 + (global.dungeonWins * global.kills)
+    if (global.playerSin >= (global.kills * 10)) && (attackPwr >= 2){
+        attackPwr /= 2
+    }
+    
+    var speedMod = 4
+    if (prefix == "Swift"){
+        speedMod = 7
+    } 
+    else if (prefix == "Rancid"){
+        speedMod = 3
+    }
+    
+    if (prefix =="Stunning"){
+        attackPwr += 5
+    }
+    else if (prefix == "Cool") || (prefix == "Unholy"){
+        attackPwr += 3
+    }
+    
+    
+    newItem = {
+        name:itemName,
+        level: global.dungeonWins,
+        attack: attackPwr,
+        speed: speedMod }
+    
+    return newItem
+    
 }

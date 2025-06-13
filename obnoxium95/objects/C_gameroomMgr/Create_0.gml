@@ -12,3 +12,6 @@ stats = {playerhp: format_scientific(global.playerHP),
     kills: global.kills,
     deaths: global.deaths
 }
+
+// max 3 items held
+equipmentArray = []

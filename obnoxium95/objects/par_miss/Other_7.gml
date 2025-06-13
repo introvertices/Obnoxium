@@ -1,0 +1,1 @@
+image_index = sprite_get_number(sp_par_miss)

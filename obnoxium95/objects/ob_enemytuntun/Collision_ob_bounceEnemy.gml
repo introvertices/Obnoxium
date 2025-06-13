@@ -1,0 +1,1 @@
+direction +=irandom_range(180,190)

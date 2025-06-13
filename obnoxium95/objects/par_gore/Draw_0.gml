@@ -1,0 +1,1 @@
+draw_sprite_ext(sp_par_gore,image_index,x,y,1,1,image_angle,c_white,1)

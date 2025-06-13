@@ -1,0 +1,1 @@
+draw_sprite_ext(sp_fade,0,0,0,room_width,room_height,0,c_white,image_alpha)

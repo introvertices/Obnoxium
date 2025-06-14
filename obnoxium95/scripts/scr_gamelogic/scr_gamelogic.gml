@@ -142,6 +142,9 @@ function format_scientific(_number, _decimal_places = 2) {
 
 function createEquip(){
     
+    var equipSpriteIndex = 0
+    var borderSpriteIndex = 0
+    
     var prefix = choose("Crap", "Lame", "Tepid", "Cool", "Stunning","Unholy", "Smelly", "Swift", "Rancid")
     
     var itemName = string(prefix) + " " + string(choose("Weasel Slammer", "Knuckle Licker", "Tommyknocker", "Pint Glass", "Smashed Avocado", "Loaded Dice", "Can Opener", "Fishfingers", "Mouse Trap", "Youtube Sponsorship", "Streamer Bait"))
@@ -171,7 +174,9 @@ function createEquip(){
         name:itemName,
         level: global.dungeonWins,
         attack: attackPwr,
-        speed: speedMod }
+        speed: speedMod,
+        sprite: equipSpriteIndex,
+        border: borderSpriteIndex }
     
     return newItem
     

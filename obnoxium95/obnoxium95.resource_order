@@ -79,6 +79,8 @@
     {"name":"sp_playerTunnel","order":1,"path":"sprites/sp_playerTunnel/sp_playerTunnel.yy",},
     {"name":"sp_rockCrumbly","order":2,"path":"sprites/sp_rockCrumbly/sp_rockCrumbly.yy",},
     {"name":"sp_slot_equip","order":3,"path":"sprites/sp_slot_equip/sp_slot_equip.yy",},
+    {"name":"sp_slot_equipBorder","order":6,"path":"sprites/sp_slot_equipBorder/sp_slot_equipBorder.yy",},
+    {"name":"sp_slot_gear","order":5,"path":"sprites/sp_slot_gear/sp_slot_gear.yy",},
     {"name":"sp_slot_icons","order":2,"path":"sprites/sp_slot_icons/sp_slot_icons.yy",},
     {"name":"sp_slot_score","order":1,"path":"sprites/sp_slot_score/sp_slot_score.yy",},
     {"name":"sp_slot_ui","order":4,"path":"sprites/sp_slot_ui/sp_slot_ui.yy",},

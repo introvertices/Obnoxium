@@ -113,6 +113,8 @@
     {"id":{"name":"sp_playerTunnel","path":"sprites/sp_playerTunnel/sp_playerTunnel.yy",},},
     {"id":{"name":"sp_rockCrumbly","path":"sprites/sp_rockCrumbly/sp_rockCrumbly.yy",},},
     {"id":{"name":"sp_slot_equip","path":"sprites/sp_slot_equip/sp_slot_equip.yy",},},
+    {"id":{"name":"sp_slot_equipBorder","path":"sprites/sp_slot_equipBorder/sp_slot_equipBorder.yy",},},
+    {"id":{"name":"sp_slot_gear","path":"sprites/sp_slot_gear/sp_slot_gear.yy",},},
     {"id":{"name":"sp_slot_icons","path":"sprites/sp_slot_icons/sp_slot_icons.yy",},},
     {"id":{"name":"sp_slot_lever","path":"sprites/sp_slot_lever/sp_slot_lever.yy",},},
     {"id":{"name":"sp_slot_score","path":"sprites/sp_slot_score/sp_slot_score.yy",},},

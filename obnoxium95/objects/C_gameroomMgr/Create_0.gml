@@ -1,7 +1,11 @@
 tile = 32
 yHeight = tile * 5
 
-
+formatScore = format_scientific(global.slotScore)
+colourScore = [c_orange,c_white,c_yellow,c_red]
+colourStep = 0.1
+lerpProgress = 0
+pingPong = abs(sin(lerpProgress))
 
 
 stats = {playerhp: format_scientific(global.playerHP),
@@ -15,3 +19,5 @@ stats = {playerhp: format_scientific(global.playerHP),
 
 // max 3 items held
 equipmentArray = []
+
+slotsStopped = []

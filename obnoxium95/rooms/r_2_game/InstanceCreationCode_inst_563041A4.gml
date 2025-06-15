@@ -1,0 +1,1 @@
+ob_slot_lever.slot2 = id

@@ -34,6 +34,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"f_score","order":2,"path":"fonts/f_score/f_score.yy",},
     {"name":"f_ui","order":1,"path":"fonts/f_ui/f_ui.yy",},
     {"name":"C_credz","order":1,"path":"objects/C_credz/C_credz.yy",},
     {"name":"C_gameroomMgr","order":4,"path":"objects/C_gameroomMgr/C_gameroomMgr.yy",},

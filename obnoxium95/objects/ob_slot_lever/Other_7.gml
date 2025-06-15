@@ -1,3 +1,3 @@
-allow_click = true
+//allow_click = true
 image_speed = 0
 image_index = 0

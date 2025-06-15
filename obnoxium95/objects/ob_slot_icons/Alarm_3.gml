@@ -1,0 +1,1 @@
+speedMod = random_range(0.02,0.05)

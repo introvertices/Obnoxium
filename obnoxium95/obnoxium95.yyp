@@ -53,6 +53,7 @@
   "name":"obnoxium95",
   "resources":[
     {"id":{"name":"f_game","path":"fonts/f_game/f_game.yy",},},
+    {"id":{"name":"f_score","path":"fonts/f_score/f_score.yy",},},
     {"id":{"name":"f_ui","path":"fonts/f_ui/f_ui.yy",},},
     {"id":{"name":"C_credz","path":"objects/C_credz/C_credz.yy",},},
     {"id":{"name":"C_gameroomMgr","path":"objects/C_gameroomMgr/C_gameroomMgr.yy",},},

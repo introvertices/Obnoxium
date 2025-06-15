@@ -27,6 +27,7 @@ global.kills = 0
 global.deaths = 0
 global.dungeonWins = 0
 global.dungeonMod = 1        // dungeonlevel
+global.slotScore = 0
 
 
 

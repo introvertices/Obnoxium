@@ -76,12 +76,23 @@ function slotWins(s1,s2,s3){
             array_pop(C_gameroomMgr.equipmentArray)
         } 
         
+        // score
+        global.slotScore += 1000
+        
     }
     
     // Sin Win
     if (s1 == 2) && (s2 == 2) && (s3 == 2){
         // Give sin
         prize = 2.5 * global.deaths
+        
+        // send to Sin stat
+        global.playerSin += prize
+        
+        // spawn anim if applicable
+        
+        // score
+        global.slotScore -= 200
     }
     
     // Enemy win
@@ -93,7 +104,15 @@ function slotWins(s1,s2,s3){
         }
         
         // add to difficulty mod
-        prize2 = 0.3 + global.dungeonMod
+        prize = 0.3
+        
+        // send to dungeon mod
+        global.dungeonMod += prize
+        
+        // spawn anim if applicable
+        
+        // score
+        global.slotScore += 10
         
     }
     
@@ -101,6 +120,15 @@ function slotWins(s1,s2,s3){
     if (s1 == 6) && (s2 == 6) && (s3 == 6){
         // Give dmg
         prize = round(2 * global.kills)
+        
+        // send to atk
+        global.playerAtk += prize
+        
+        // spawn anim if applicable
+        
+        // score
+        global.slotScore += 1000
+        
     }
     
     // hearts win
@@ -108,12 +136,26 @@ function slotWins(s1,s2,s3){
         // Give hearts
         prize = round(10 * global.dungeonWins)
         prize2 = round(prize/2)                        // heals for 50%
+        
+        // send to max hp
+        global.playerMaxHP += prize
+        
+        // heal player
+        global.playerHP += prize2
+        
+        // spawn anim if applicable
+        
+        // score
+        global.slotScore += 500
     }
     
     // coins win
     if (s1 == 10) && (s2 == 10) && (s3 == 10){
         // Give score
         prize = 1000 * global.kills
+        
+        // send to score
+        global.slotScore += prize
         
     }
     
@@ -146,8 +188,9 @@ function createEquip(){
     var borderSpriteIndex = 0
     
     var prefix = choose("Crap", "Lame", "Tepid", "Cool", "Stunning","Unholy", "Smelly", "Swift", "Rancid")
+    var suffix = choose("Weasel Slammer", "Knuckle Licker", "Tommyknocker", "Pint Glass", "Smashed Avocado", "Loaded Dice", "Can Opener", "Fishfingers", "Mouse Trap", "Youtube Sponsorship", "Streamer Bait")
     
-    var itemName = string(prefix) + " " + string(choose("Weasel Slammer", "Knuckle Licker", "Tommyknocker", "Pint Glass", "Smashed Avocado", "Loaded Dice", "Can Opener", "Fishfingers", "Mouse Trap", "Youtube Sponsorship", "Streamer Bait"))
+    var itemName = string(prefix) + " " + string(suffix)
     
     var attackPwr = 1 + (global.dungeonWins * global.kills)
     if (global.playerSin >= (global.kills * 10)) && (attackPwr >= 2){
@@ -167,6 +210,28 @@ function createEquip(){
     }
     else if (prefix == "Cool") || (prefix == "Unholy"){
         attackPwr += 3
+    }
+    
+    // Borders
+    
+    if (prefix == "Crap") || (prefix == "Smelly") || (prefix == "Lame") || (prefix == "Rancid"){
+        borderSpriteIndex = 1
+        
+    }
+    else if (prefix == "Tepid") || (prefix == "Swift") || (prefix == "Cool"){
+        borderSpriteIndex = 2
+        
+    }
+    else if (prefix == "Stunning") || (prefix == "Unholy"){
+        borderSpriteIndex = 3
+    }
+    
+    // Sprites
+    var equipSprites = ["None","Weasel Slammer", "Knuckle Licker", "Tommyknocker", "Pint Glass", "Smashed Avocado", "Loaded Dice", "Can Opener", "Fishfingers", "Mouse Trap", "Youtube Sponsorship", "Streamer Bait"]
+    for (var i = 0; i < array_length(equipSprites); i++){
+        if (suffix == equipSprites[i]){
+            equipSpriteIndex = i
+        }
     }
     
     

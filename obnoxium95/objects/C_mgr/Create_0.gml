@@ -14,7 +14,12 @@ global.allowControl = true
 
 global.playerHP = 0
 global.playerMaxHP = 0
+
+global.attackMod = 0
 global.playerAtk = 0
+
+global.speedMod = 0
+
 global.playerSin = 0
 global.playerDodge = 56 - global.playerSin
 global.playerDodgeMax = 75

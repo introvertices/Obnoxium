@@ -10,7 +10,7 @@ pingPong = abs(sin(lerpProgress))
 
 stats = {playerhp: format_scientific(global.playerHP),
     playerMaxHP: format_scientific(global.playerMaxHP),
-    playerAtk: format_scientific(global.playerAtk),
+    playerAtk: format_scientific(global.playerAtk + global.attackMod),
     playerSin: format_scientific(global.playerSin),
     dungeonLevel: global.dungeonWins,
     kills: global.kills,
@@ -19,5 +19,14 @@ stats = {playerhp: format_scientific(global.playerHP),
 
 // max 3 items held
 equipmentArray = []
+
+eq1 = 0
+eq2 = 0
+eq3 = 0
+
+totalAtkMod = 0
+totalSpeedMod = 0
+
+
 
 slotsStopped = []

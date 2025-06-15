@@ -10,7 +10,7 @@ if (!place_empty(x,y,ob_solid)){
 stareDir = 0
 image_speed = 0
 
-speed = 4
+speed = 4 + global.speedMod
 direction = irandom(365)
 
 

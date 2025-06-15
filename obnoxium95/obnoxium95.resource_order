@@ -44,6 +44,7 @@
     {"name":"ob_debug","order":2,"path":"objects/ob_debug/ob_debug.yy",},
     {"name":"ob_DEBUGGER","order":3,"path":"objects/ob_DEBUGGER/ob_DEBUGGER.yy",},
     {"name":"ob_enemytuntun","order":4,"path":"objects/ob_enemytuntun/ob_enemytuntun.yy",},
+    {"name":"ob_equipment","order":3,"path":"objects/ob_equipment/ob_equipment.yy",},
     {"name":"ob_exitButton","order":4,"path":"objects/ob_exitButton/ob_exitButton.yy",},
     {"name":"ob_plumpyboi","order":3,"path":"objects/ob_plumpyboi/ob_plumpyboi.yy",},
     {"name":"ob_r_intro_ctrl","order":2,"path":"objects/ob_r_intro_ctrl/ob_r_intro_ctrl.yy",},

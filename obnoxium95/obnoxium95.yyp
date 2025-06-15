@@ -65,6 +65,7 @@
     {"id":{"name":"ob_debug","path":"objects/ob_debug/ob_debug.yy",},},
     {"id":{"name":"ob_DEBUGGER","path":"objects/ob_DEBUGGER/ob_DEBUGGER.yy",},},
     {"id":{"name":"ob_enemytuntun","path":"objects/ob_enemytuntun/ob_enemytuntun.yy",},},
+    {"id":{"name":"ob_equipment","path":"objects/ob_equipment/ob_equipment.yy",},},
     {"id":{"name":"ob_exitButton","path":"objects/ob_exitButton/ob_exitButton.yy",},},
     {"id":{"name":"ob_fader","path":"objects/ob_fader/ob_fader.yy",},},
     {"id":{"name":"ob_playerTunnel","path":"objects/ob_playerTunnel/ob_playerTunnel.yy",},},

@@ -76,8 +76,17 @@ function slotWins(s1,s2,s3){
             array_pop(C_gameroomMgr.equipmentArray)
         } 
         
+        with(C_gameroomMgr){
+            event_user(2)
+        }
+        
         // score
         global.slotScore += 1000
+        
+        
+        show_debug_message(newEquipment)
+        show_debug_message(C_gameroomMgr.equipmentArray)
+        
         
     }
     
@@ -237,7 +246,7 @@ function createEquip(){
     
     newItem = {
         name:itemName,
-        level: global.dungeonWins,
+        level: ceil(global.dungeonWins + 1),
         attack: attackPwr,
         speed: speedMod,
         sprite: equipSpriteIndex,

@@ -1,0 +1,1 @@
+C_gameroomMgr.eq2 = id

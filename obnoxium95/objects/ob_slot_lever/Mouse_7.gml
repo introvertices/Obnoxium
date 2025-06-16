@@ -1,5 +1,10 @@
 if (allow_click = true){
     
+    // play sfx
+    audio_play_sound(choose(sfx[0],sfx[1]),1,false)
+    audio_play_sound(sfx_slotSpin,2,true)
+    
+    
     image_speed = 1
     allow_click = false
     

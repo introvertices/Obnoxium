@@ -2,6 +2,11 @@
 
 if (array_length(slotsStopped) >= 3){
     
+    // stop spinning sound
+    if (audio_is_playing(sfx_slotSpin)) {
+        audio_stop_sound(sfx_slotSpin)
+    }
+    
     // consolation prizes
     
     if (slotsStopped[0] != slotsStopped[1]) || (slotsStopped[0] != slotsStopped[2]) || (slotsStopped[1] != slotsStopped[2]){

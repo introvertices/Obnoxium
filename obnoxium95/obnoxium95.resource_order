@@ -34,6 +34,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"f_key","order":3,"path":"fonts/f_key/f_key.yy",},
     {"name":"f_score","order":2,"path":"fonts/f_score/f_score.yy",},
     {"name":"f_ui","order":1,"path":"fonts/f_ui/f_ui.yy",},
     {"name":"C_credz","order":1,"path":"objects/C_credz/C_credz.yy",},
@@ -86,6 +87,7 @@
     {"name":"sp_slot_icons","order":2,"path":"sprites/sp_slot_icons/sp_slot_icons.yy",},
     {"name":"sp_slot_score","order":1,"path":"sprites/sp_slot_score/sp_slot_score.yy",},
     {"name":"sp_slot_ui","order":4,"path":"sprites/sp_slot_ui/sp_slot_ui.yy",},
+    {"name":"sp_slotKey","order":7,"path":"sprites/sp_slotKey/sp_slotKey.yy",},
     {"name":"sp_solid","order":3,"path":"sprites/sp_solid/sp_solid.yy",},
     {"name":"sp_titleBox","order":2,"path":"sprites/sp_titleBox/sp_titleBox.yy",},
     {"name":"sp_titleExit","order":4,"path":"sprites/sp_titleExit/sp_titleExit.yy",},

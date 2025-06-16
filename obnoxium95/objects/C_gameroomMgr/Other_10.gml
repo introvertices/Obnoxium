@@ -14,7 +14,7 @@ if (global.kills >= 10){
     /*with (ob_tuntunSpawner){event_user(0)}*/
 }
 
-stats.playerAtk = format_scientific(global.playerAtk)
+stats.playerAtk = format_scientific(global.playerAtk + global.attackMod)
 stats.playerMaxHP = format_scientific(global.playerMaxHP)
 stats.playerhp =  format_scientific(global.playerHP)
 stats.playerSin = format_scientific(global.playerSin)

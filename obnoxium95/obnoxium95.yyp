@@ -53,6 +53,7 @@
   "name":"obnoxium95",
   "resources":[
     {"id":{"name":"f_game","path":"fonts/f_game/f_game.yy",},},
+    {"id":{"name":"f_key","path":"fonts/f_key/f_key.yy",},},
     {"id":{"name":"f_score","path":"fonts/f_score/f_score.yy",},},
     {"id":{"name":"f_ui","path":"fonts/f_ui/f_ui.yy",},},
     {"id":{"name":"C_credz","path":"objects/C_credz/C_credz.yy",},},
@@ -121,6 +122,7 @@
     {"id":{"name":"sp_slot_lever","path":"sprites/sp_slot_lever/sp_slot_lever.yy",},},
     {"id":{"name":"sp_slot_score","path":"sprites/sp_slot_score/sp_slot_score.yy",},},
     {"id":{"name":"sp_slot_ui","path":"sprites/sp_slot_ui/sp_slot_ui.yy",},},
+    {"id":{"name":"sp_slotKey","path":"sprites/sp_slotKey/sp_slotKey.yy",},},
     {"id":{"name":"sp_solid","path":"sprites/sp_solid/sp_solid.yy",},},
     {"id":{"name":"sp_title_mouth","path":"sprites/sp_title_mouth/sp_title_mouth.yy",},},
     {"id":{"name":"sp_titleBox","path":"sprites/sp_titleBox/sp_titleBox.yy",},},

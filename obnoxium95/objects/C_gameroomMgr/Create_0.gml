@@ -1,6 +1,8 @@
 tile = 32
 yHeight = tile * 5
 
+image_speed = 0
+
 formatScore = format_scientific(global.slotScore)
 colourScore = [c_orange,c_white,c_yellow,c_red]
 colourStep = 0.1
@@ -26,7 +28,10 @@ eq3 = 0
 
 totalAtkMod = 0
 totalSpeedMod = 0
-
-
+isCrumbed = 0
+crumbMod = 1 + round(global.cookieClicked / 2)
 
 slotsStopped = []
+
+mouseover = false
+mouseoverData = []

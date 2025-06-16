@@ -26,7 +26,11 @@ global.playerDodgeMax = 75
 
 // stats
 global.cardsFlipped = 0
+
+global.cookieTotal = 3200000
 global.cookieClicked = 0
+global.cookieClicksToGo = global.cookieTotal - global.cookieClicked
+
 global.spins = 0
 global.kills = 0
 global.deaths = 0

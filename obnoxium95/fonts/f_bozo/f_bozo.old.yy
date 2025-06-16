@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"f_key",
+  "%Name":"f_bozo",
   "AntiAlias":0,
   "applyKerning":0,
   "ascender":12,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":16,
   "maintainGms1Font":false,
-  "name":"f_key",
+  "name":"f_bozo",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
@@ -134,7 +134,10 @@
   "sdfSpread":8,
   "size":10.0,
   "styleName":"Regular",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }

@@ -21,3 +21,4 @@ stats.playerSin = format_scientific(global.playerSin)
 stats.dungeonLevel = global.dungeonWins
 stats.kills = global.kills
 stats.deaths = global.deaths
+

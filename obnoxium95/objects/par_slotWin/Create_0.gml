@@ -6,14 +6,14 @@ animations = [
 [sp_slotWin_glitch,vsfx_glitch]
 ]
 
-if (!variable_instance_exists(id, "loadImg")) {
-    loadImg = 4; // Only set if not already set
+if (!variable_instance_exists(id, "loadimg")) {
+    loadimg = 4; // Only set if not already set
 }
 
 
-image_index = animations[loadImg][0]
+sprite_index = animations[loadimg][0]
 
-snd = animations[loadImg][1]
+snd = animations[loadimg][1]
 
 audio_play_sound(snd,1,false)
 

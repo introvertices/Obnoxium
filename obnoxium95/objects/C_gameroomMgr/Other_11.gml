@@ -18,7 +18,24 @@ if (array_length(slotsStopped) >= 3){
         var luckCheck = irandom(100){
             if (luckCheck >= global.playerSin){
                 ob_slot_lever.slot2.image_index = ob_slot_lever.slot1.image_index
+                slotsStopped[0] = ob_slot_lever.slot1.image_index
+                slotsStopped[1] = ob_slot_lever.slot2.image_index
+                slotsStopped[2] = ob_slot_lever.slot2.image_index
             }
+        }
+    }
+    
+    // bad luck protection
+    if (slotsStopped[0] != slotsStopped[1]) && (slotsStopped[0] != slotsStopped[2]) && (slotsStopped[1] != slotsStopped[2]){
+        var luckRoll = irandom(5)
+        if (luckRoll = 2){
+            var prize = choose(0,2,4,6,8,10)
+            ob_slot_lever.slot1.image_index = prize
+            ob_slot_lever.slot2.image_index = prize
+            ob_slot_lever.slot3.image_index = prize
+            slotsStopped[0] = ob_slot_lever.slot1.image_index
+            slotsStopped[1] = ob_slot_lever.slot2.image_index
+            slotsStopped[2] = ob_slot_lever.slot2.image_index
         }
     }
     

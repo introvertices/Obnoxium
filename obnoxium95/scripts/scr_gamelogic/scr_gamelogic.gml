@@ -17,14 +17,7 @@ function spawnEnemy(spawnRange,object){
 
 function enemyStats(level,difficultyMod){
     
-    //base_hp = power(28,level)
-    //base_atk = power(5,choose(1,1.5,1.75,2))        // will scale as layer increases in power
-    //dodge = ceil(global.playerSin / 10)                     // max is 56, so divided by 10 would be 5.6 % dodge cap at 75% dodge
-    //
-    //modRoll = random_range(0.20,0.45)
-    //
-    //maxhp = ceil(base_hp * power(difficultyMod ,level-modRoll))
-    //attack = ceil(base_atk * power(difficultyMod ,level-modRoll))
+
     
     base_hp = 20 * random_range(0.8,2)
     base_atk = power(2,choose(1,1.25,1.3))        // will scale as layer increases in power
@@ -99,7 +92,8 @@ function slotWins(s1,s2,s3){
         global.playerSin += prize
         
         // spawn anim if applicable
-        
+        instance_create_layer(0,0,"ol",par_slotWin,{
+            loadimg:0})
         // score
         global.slotScore -= 200
     }
@@ -119,6 +113,9 @@ function slotWins(s1,s2,s3){
         global.dungeonMod += prize
         
         // spawn anim if applicable
+        instance_create_layer(0,0,"ol",par_slotWin,{
+            loadimg:2})
+        
         
         // score
         global.slotScore += 10
@@ -134,6 +131,8 @@ function slotWins(s1,s2,s3){
         global.playerAtk += prize
         
         // spawn anim if applicable
+        instance_create_layer(0,0,"ol",par_slotWin,{
+            loadimg:1})
         
         // score
         global.slotScore += 1000
@@ -153,6 +152,8 @@ function slotWins(s1,s2,s3){
         global.playerHP += prize2
         
         // spawn anim if applicable
+        instance_create_layer(0,0,"ol",par_slotWin,{
+            loadimg:3})
         
         // score
         global.slotScore += 500
@@ -165,6 +166,12 @@ function slotWins(s1,s2,s3){
         
         // send to score
         global.slotScore += prize
+        
+        var roll = random(15)
+        if (roll <=1){
+            instance_create_layer(0,0,"ol",par_slotWin,{
+            loadimg:4})
+        }
         
     }
     

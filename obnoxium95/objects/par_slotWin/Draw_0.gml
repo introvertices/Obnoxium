@@ -1,1 +1,1 @@
-draw_sprite_ext(animations[loadImg][0],-1,0,0,2,2,0,c_white,1)
+draw_sprite_ext(animations[loadimg][0],-1,0,0,2,2,0,c_white,1)

@@ -167,6 +167,8 @@ function slotWins(s1,s2,s3){
         // send to score
         global.slotScore += prize
         
+        audio_play_sound(sfx_coin,1,false)
+        
         var roll = random(15)
         if (roll <=1){
             instance_create_layer(0,0,"ol",par_slotWin,{
@@ -178,6 +180,54 @@ function slotWins(s1,s2,s3){
 }
 
 
+
+
+function anteEater(){
+    anteChoices = choose("score","cookie","sin","plumpy","snail")
+    goal = 0
+    quest = []
+    
+    switch anteChoices{
+        
+        case "score":{
+            goal = (global.slotScore * 2) + 10000 
+            quest = [goal, "Reach " +string(goal) +" points!"]
+            break
+        }
+        
+        case "cookie":{
+            goal = irandom_range(30,60) 
+            quest = [goal, "Click " +string(goal) +" cookies!"]
+            break
+        }
+        
+        
+        case "sin":{            
+            goal = (global.slotScore * 2) + 10000 
+            quest = [goal, "Reach " +string(goal) +" points!"]
+            break
+            
+        }
+        
+        case "plumpy":{
+            goal = 1 
+            quest = [goal, "Beef it " +string(goal) +" time!"]
+            break
+            
+        }
+        
+        case "snail":{
+            goal = choose("Red","Blue") 
+            quest = [goal, string(goal) +" snail wins a race!"]
+            break
+            
+        }
+        
+    }
+    
+    
+    return quest
+}
 
 
 // HELPERS

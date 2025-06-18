@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"vsfx_plumpy.wav",
   "type":0,
-  "volume":0.7,
+  "volume":1.0,
 }

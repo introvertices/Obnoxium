@@ -23,3 +23,9 @@ if (mouseover = true) && (array_length(mouseoverData)>0){
     draw_text_ext(550,444,string(mouseoverData[0]) + "\n" +string(mouseoverData[1]) + "\n" +string(mouseoverData[2]),13,136)
 
 }
+
+
+// ANTE QUEST
+
+draw_set_font(f_ui)
+draw_text_color(203,546,"ANTE " + string(currentAnte) +"/10: " +string(anteQuest),c_white,c_white,c_white,c_white,1)

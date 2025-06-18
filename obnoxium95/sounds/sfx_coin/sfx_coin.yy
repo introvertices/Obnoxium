@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"vsfx_dmg",
+  "%Name":"sfx_coin",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,16 +10,16 @@
   "compression":0,
   "conversionMode":0,
   "duration":2.4,
-  "name":"vsfx_dmg",
+  "name":"sfx_coin",
   "parent":{
-    "name":"vocalsfx",
-    "path":"folders/Sounds/vocalsfx.yy",
+    "name":"sfx",
+    "path":"folders/Sounds/sfx.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"vsfx_dmg.wav",
+  "soundFile":"sfx_coin.wav",
   "type":0,
   "volume":1.0,
 }

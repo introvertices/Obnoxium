@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"vsfx_dmg",
+  "%Name":"sfx_honk",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.4,
-  "name":"vsfx_dmg",
+  "duration":1.5,
+  "name":"sfx_honk",
   "parent":{
-    "name":"vocalsfx",
-    "path":"folders/Sounds/vocalsfx.yy",
+    "name":"sfx",
+    "path":"folders/Sounds/sfx.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"vsfx_dmg.wav",
+  "soundFile":"sfx_honk.wav",
   "type":0,
   "volume":1.0,
 }

@@ -7,6 +7,6 @@ if (clickamount > 0){
 
 else if (clickamount <=0){
     clickamount = 0
-    text = "Hey Bozo! Ya got crumbs in my machine!!! You have 5 seconds to do " + string(clickamount) +" clicks on me or I'll 'splode ya dingus with a bunch of BAD STUFF!! HAHAH!!"
+    text = "Don't do it again!!!!!"
     instance_destroy()
 }

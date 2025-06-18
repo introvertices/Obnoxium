@@ -190,35 +190,35 @@ function anteEater(){
     switch anteChoices{
         
         case "score":{
-            goal = (global.slotScore * 2) + 10000 
-            quest = [goal, "Reach " +string(goal) +" points!"]
+            goal = (global.slotScore * 5) + 10000 
+            quest = [goal, "Reach " +string(goal) +" points!", anteChoices]
             break
         }
         
         case "cookie":{
             goal = irandom_range(30,60) 
-            quest = [goal, "Click " +string(goal) +" cookies!"]
+            quest = [goal, "Click " +string(goal) +" cookies!", anteChoices]
             break
         }
         
         
         case "sin":{            
-            goal = (global.slotScore * 2) + 10000 
-            quest = [goal, "Reach " +string(goal) +" points!"]
+            goal = 3 
+            quest = [goal, "Beef it " +string(goal) +" times!", anteChoices]
             break
             
         }
         
         case "plumpy":{
             goal = 1 
-            quest = [goal, "Beef it " +string(goal) +" time!"]
+            quest = [goal, "Get " +string(goal) +" Plumpy Time!", anteChoices]
             break
             
         }
         
         case "snail":{
             goal = choose("Red","Blue") 
-            quest = [goal, string(goal) +" snail wins a race!"]
+            quest = [goal, string(goal) +" snail wins a race!", anteChoices]
             break
             
         }

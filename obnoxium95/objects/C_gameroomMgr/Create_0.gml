@@ -37,7 +37,5 @@ mouseover = false
 mouseoverData = []
 
 
-anteTimer = 30
-currentAnte = 1
-anteQuest = ""
+
 

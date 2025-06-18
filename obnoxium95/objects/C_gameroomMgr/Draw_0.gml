@@ -25,7 +25,3 @@ if (mouseover = true) && (array_length(mouseoverData)>0){
 }
 
 
-// ANTE QUEST
-
-draw_set_font(f_ui)
-draw_text_color(203,546,"ANTE " + string(currentAnte) +"/10: " +string(anteQuest),c_white,c_white,c_white,c_white,1)

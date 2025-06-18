@@ -1,0 +1,1 @@
+x += irandom_range(4,7)

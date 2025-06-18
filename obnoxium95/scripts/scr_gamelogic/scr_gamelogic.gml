@@ -169,7 +169,7 @@ function slotWins(s1,s2,s3){
         
         audio_play_sound(sfx_coin,1,false)
         
-        var roll = random(15)
+        var roll = random(5)
         if (roll <=1){
             instance_create_layer(0,0,"ol",par_slotWin,{
             loadimg:4})
@@ -183,42 +183,68 @@ function slotWins(s1,s2,s3){
 
 
 function anteEater(){
-    anteChoices = choose("score","cookie","sin","plumpy","snail")
+    //anteChoices = choose("score","cookie","sin","plumpy","snail")
+    anteChoices = choose("score","cookie","snail")
     goal = 0
     quest = []
     
     switch anteChoices{
         
         case "score":{
-            goal = (global.slotScore * 5) + 10000 
+            goal = (global.slotScore * 3) + 5000 
             quest = [goal, "Reach " +string(goal) +" points!", anteChoices]
+            
+            // set ante objective vars
+            ob_anteTimer.captureStat = global.slotScore
+            ob_anteTimer.trackStat = ob_anteTimer.captureStat + goal
+            
             break
         }
         
         case "cookie":{
-            goal = irandom_range(30,60) 
+            goal = irandom_range(15,40) 
             quest = [goal, "Click " +string(goal) +" cookies!", anteChoices]
+            
+            // set ante objective vars
+            ob_anteTimer.captureStat = global.cookieClicked
+            ob_anteTimer.trackStat = ob_anteTimer.captureStat + goal
+            
             break
         }
         
         
         case "sin":{            
-            goal = 3 
-            quest = [goal, "Beef it " +string(goal) +" times!", anteChoices]
+            goal = irandom_range(3,8) 
+            quest = [goal, "Beef it for +" +string(goal) +" sin!", anteChoices]
+            
+            // set ante objective vars
+            ob_anteTimer.captureStat = global.playerSin
+            ob_anteTimer.trackStat = ob_anteTimer.captureStat + goal
             break
             
         }
         
         case "plumpy":{
-            goal = 1 
-            quest = [goal, "Get " +string(goal) +" Plumpy Time!", anteChoices]
+            goal = irandom_range(2,7) 
+            quest = [goal, "Get total +" +string(goal) +" Plumpy kills!", anteChoices]
+            
+            // set ante objective vars
+            ob_anteTimer.captureStat = global.kills
+            ob_anteTimer.trackStat = captureStat + goal
+            
+            
+            
             break
             
         }
         
         case "snail":{
             goal = choose("Red","Blue") 
-            quest = [goal, string(goal) +" snail wins a race!", anteChoices]
+            quest = [goal, string(goal) +" snail wins a race! (CLICK HIM!)", anteChoices]
+            
+            // set ante objective vars
+            ob_anteTimer.captureStat = 0
+            ob_anteTimer.trackStat = 0
             break
             
         }

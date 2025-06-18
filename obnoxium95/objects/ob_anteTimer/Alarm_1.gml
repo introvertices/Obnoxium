@@ -9,12 +9,14 @@ if (allowComplete == true) && (anteTimer > 0){
         
         case "score":{
             // does the slot score match or exceed the target?
-            if (global.slotScore >= quest[0]){
+            if (global.slotScore >= trackStat){
                 //increase ante
                 currentAnte +=1
                 
                 // reset quest state
                 quest=[0,"",""]
+                captureStat = 0
+                trackStat = 0
                 
                 // flag completion
                 allowComplete = false
@@ -27,12 +29,14 @@ if (allowComplete == true) && (anteTimer > 0){
         
         case "cookies":{
             // did the player match or exceed the number of cookies to click?
-            if (global.slotScore >= quest[0]){
+            if (global.cookieClicked >= trackStat){
                 //increase ante
                 currentAnte +=1
                 
                 // reset quest state
                 quest=[0,"",""]
+                captureStat = 0
+                trackStat = 0
                 
                 // flag completion
                 allowComplete = false
@@ -45,12 +49,14 @@ if (allowComplete == true) && (anteTimer > 0){
         
         case "sin":{
             // did the player match or exceed the sin requirement?
-            if (global.slotScore >= quest[0]){
+            if (global.playerSin >= trackStat){
                 //increase ante
                 currentAnte +=1
                 
                 // reset quest state
                 quest=[0,"",""]
+                captureStat = 0
+                trackStat = 0
                 
                 // flag completion
                 allowComplete = false
@@ -64,12 +70,15 @@ if (allowComplete == true) && (anteTimer > 0){
         
         case "plumpy":{
             // did the player win a plumpy time on the slots?
-            if (global.slotScore >= quest[0]){
+            var enemyNum = instance_number(ob_enemytuntun)
+            if ( enemyNum >= trackStat){
                 //increase ante
                 currentAnte +=1
                 
                 // reset quest state
                 quest=[0,"",""]
+                captureStat = 0
+                trackStat = 0
                 
                 // flag completion
                 allowComplete = false
@@ -83,12 +92,14 @@ if (allowComplete == true) && (anteTimer > 0){
         
         case "snail":{
             // did the required snail win the race?
-            if (global.slotScore >= quest[0]){
+            if (winningSnail == quest[0]){
                 //increase ante
                 currentAnte +=1
                 
                 // reset quest state
                 quest=[0,"",""]
+                captureStat = 0
+                trackStat = 0
                 
                 // flag completion
                 allowComplete = false
@@ -100,7 +111,30 @@ if (allowComplete == true) && (anteTimer > 0){
             
         }
     }
+
+    alarm[1] = 1 * game_get_speed(gamespeed_fps)
+
 }
 
 
-alarm[1] = 1 * game_get_speed(gamespeed_fps)
+
+
+
+// Fail state
+
+if (anteTimer <= 0){
+    
+    instance_destroy()
+    
+    //ob_slot_lever.allow_click = false
+    //
+    //image_index = 1
+    //allowComplete = false
+    ////instance_create_layer(0,0,"ol",par_slotWin,{loadimg:0})
+    //
+    //
+    //currentAnte = 1
+    //global.slotScore /= 2
+    //
+    //alarm[0] = 4 * game_get_speed(gamespeed_fps)
+}

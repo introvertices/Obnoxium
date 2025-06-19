@@ -47,6 +47,6 @@ if (array_length(slotsStopped) >= 3){
       
     ob_slot_lever.allow_click = true
     event_user(0)
-    show_debug_message(global.slotScore)
+    //show_debug_message(global.slotScore)
 }
 

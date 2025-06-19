@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"music_game.ogg",
+  "soundFile":"music_game.wav",
   "type":1,
   "volume":1.0,
 }

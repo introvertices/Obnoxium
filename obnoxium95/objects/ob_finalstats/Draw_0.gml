@@ -4,7 +4,7 @@ draw_set_color(c_white)
 
 
 
-if (global.gooner = true){
+if (global.gooner == true){
     draw_text(xpad,ypad,"We all saw you peek")
 }
 

@@ -1,7 +1,7 @@
 randomize()
 
 // disable when done
-global.debug = true
+global.debug = false
 
 global.roomTarget = r_title
 global.buttonClicked = false

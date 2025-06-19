@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":33.6,
+  "duration":28.8,
   "name":"music_title",
   "parent":{
     "name":"music",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"music_title.ogg",
+  "soundFile":"music_title.wav",
   "type":1,
   "volume":1.0,
 }

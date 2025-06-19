@@ -1,5 +1,5 @@
 image_speed = 0
-clickamount = irandom_range(10,35)
+clickamount = irandom_range(10,20)
 text = "Hey Bozo! Ya got crumbs in my machine!!! You have 5 seconds to do " + string(clickamount) +" clicks on me or I'll 'splode ya dingus with a bunch of BAD STUFF!! HAHAH!!"
 
 if (!variable_instance_exists(id, "bombdmg")) {

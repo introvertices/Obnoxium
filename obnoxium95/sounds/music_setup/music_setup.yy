@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":37.36365,
+  "duration":37.36363,
   "name":"music_setup",
   "parent":{
     "name":"music",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"music_setup.ogg",
+  "soundFile":"music_setup.wav",
   "type":1,
   "volume":1.0,
 }

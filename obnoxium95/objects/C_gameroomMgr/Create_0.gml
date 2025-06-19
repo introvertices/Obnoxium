@@ -36,6 +36,8 @@ slotsStopped = []
 mouseover = false
 mouseoverData = []
 
+anteFailed = 0
+
 
 
 

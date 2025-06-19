@@ -11,6 +11,6 @@ captureStat = 0
 trackStat = 0
 winningSnail = ""
 
-anteTimer = 30
+anteTimer = 40
 alarm[0] = 5
 alarm[1] = 1 * game_get_speed(gamespeed_fps)

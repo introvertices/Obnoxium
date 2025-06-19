@@ -15,10 +15,12 @@ if rolldice_e <= round(enemyCreate.dodge){
 else if (rolldice_e >= 85){
     // crit strike to self
     dmgToSelf = enemyCreate.currenthp - ((global.playerAtk + global.attackMod) * 1.5)
+    global.slotScore += 100
 }
 else {
     // if not dodged take a hit
     dmgToSelf = (global.playerAtk + global.attackMod) * choose(1,1.2)
+    global.slotScore += 72.30
 }
 
 

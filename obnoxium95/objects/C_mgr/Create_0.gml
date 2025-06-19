@@ -27,7 +27,7 @@ global.playerDodgeMax = 75
 // stats
 global.cardsFlipped = 0
 
-global.cookieTotal = 3200000
+global.cookieTotal = 69420
 global.cookieClicked = 0
 global.cookieClicksToGo = global.cookieTotal - global.cookieClicked
 
@@ -44,12 +44,6 @@ global.slotScore = 0
 // marketing bonuses
 
 global.gooner = false        // Try and move the title box
-global.roguelike = 0         // Die in the tunnel x times
-global.idler = 0             // level up unc the homunc x times
-global.deckbuilder = 0       // flip x cards
-global.viral = 0             // reach x damage
-global.overflow = false      // buffer overflow the cookie
-global.sugarfree = false     // honour the GDPR and get the cookie to 0
-global.bigshot = 0           // jackpot x times
-global.mildNudity = false    // make a new fella in all his slimy nude glory
-global.oldmcdonalds = 0      // grow x things in the 'garden'
+global.antes = 0
+
+

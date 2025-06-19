@@ -1,0 +1,12 @@
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+instance_create_layer(0,0,"particles",par_grats)
+audio_play_sound(sfx_coin,2,false)
+
+alarm[0] = irandom_range(10,150)

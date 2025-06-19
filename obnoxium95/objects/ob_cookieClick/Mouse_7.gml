@@ -8,7 +8,7 @@ if (roll <=2){
 else {C_gameroomMgr.isCrumbed = 0}
 
 global.cookieClicked +=1
-global.slotScore += 1 + (global.cookieClicked/2)
+global.slotScore += 1 + (global.cookieClicked*2)
 
 global.cookieClicksToGo = global.cookieTotal - global.cookieClicked
 

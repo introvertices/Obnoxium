@@ -22,6 +22,7 @@ if (allowComplete == true) && (anteTimer > 0){
                 allowComplete = false
                 
                 // fetch next quest
+                global.antes +=1
                 alarm[0] = 5
                 break
             }
@@ -42,57 +43,60 @@ if (allowComplete == true) && (anteTimer > 0){
                 allowComplete = false
                 
                 // fetch next quest
+                global.antes +=1
                 alarm[0] = 5
                 break
             }
         }
         
-        case "sin":{
-            // did the player match or exceed the sin requirement?
-            if (global.playerSin >= trackStat){
-                //increase ante
-                currentAnte +=1
-                
-                // reset quest state
-                quest=[0,"",""]
-                captureStat = 0
-                trackStat = 0
-                
-                // flag completion
-                allowComplete = false
-                
-                // fetch next quest
-                alarm[0] = 5
-                break
-            }
-            
-        }
-        
-        case "plumpy":{
-            // did the player win a plumpy time on the slots?
-            var enemyNum = instance_number(ob_enemytuntun)
-            if ( enemyNum >= trackStat){
-                //increase ante
-                currentAnte +=1
-                
-                // reset quest state
-                quest=[0,"",""]
-                captureStat = 0
-                trackStat = 0
-                
-                // flag completion
-                allowComplete = false
-                
-                // fetch next quest
-                alarm[0] = 5
-                break
-            }
-            
-        }
+        //case "sin":{
+            //// did the player match or exceed the sin requirement?
+            //if (global.playerSin >= trackStat){
+                ////increase ante
+                //currentAnte +=1
+                //
+                //// reset quest state
+                //quest=[0,"",""]
+                //captureStat = 0
+                //trackStat = 0
+                //
+                //// flag completion
+                //allowComplete = false
+                //
+                //// fetch next quest
+                //alarm[0] = 5
+                //break
+            //}
+            //
+        //}
+        //
+        //case "plumpy":{
+            //// did the player win a plumpy time on the slots?
+            //var enemyNum = instance_number(ob_enemytuntun)
+            //if ( enemyNum >= trackStat){
+                ////increase ante
+                //currentAnte +=1
+                //
+                //// reset quest state
+                //quest=[0,"",""]
+                //captureStat = 0
+                //trackStat = 0
+                //
+                //// flag completion
+                //allowComplete = false
+                //
+                //// fetch next quest
+                //alarm[0] = 5
+                //break
+            //}
+            //
+        //}
         
         case "snail":{
             // did the required snail win the race?
-            if (winningSnail == quest[0]){
+            var expectedSnail = string(quest[0])
+            
+            if (winningSnail == expectedSnail){
                 //increase ante
                 currentAnte +=1
                 
@@ -106,15 +110,17 @@ if (allowComplete == true) && (anteTimer > 0){
                 
                 // fetch next quest
                 alarm[0] = 5
+                global.antes +=1
                 break
             }
             
         }
     }
 
-    alarm[1] = 1 * game_get_speed(gamespeed_fps)
+    
 
 }
+alarm[1] = 1 * game_get_speed(gamespeed_fps)
 
 
 

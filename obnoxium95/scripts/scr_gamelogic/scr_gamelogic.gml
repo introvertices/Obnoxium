@@ -194,7 +194,7 @@ function anteEater(){
             if (global.slotScore < 90000){
             goal = (global.slotScore * 1.7) + 5000 
             }
-            else {goal = (global.slotScore * 1.15) + 1000}
+            else {goal = (global.slotScore * 1.5) + 1000}
             quest = [goal, "Reach " +string(goal) +" points!", anteChoices]
             
             // set ante objective vars

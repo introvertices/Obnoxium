@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_clap",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":16,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.6,
+  "name":"sfx_clap",
+  "parent":{
+    "name":"vocalsfx",
+    "path":"folders/Sounds/vocalsfx.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":5512,
+  "soundFile":"sfx_clap.wav",
+  "type":0,
+  "volume":1.0,
+}

@@ -1,0 +1,1 @@
+draw_sprite(sp_anteFlair,-1, 189,526)
